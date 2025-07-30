@@ -1,8 +1,14 @@
 {
-  "image": "ghcr.io/srl-labs/containerlab/devcontainer-dind-slim:0.68.0",
+  "image": "ghcr.io/srl-labs/containerlab/devcontainer-dind-slim:0.69.1",
   "hostRequirements": {
     "cpus": 4,
     "memory": "8gb",
     "storage": "32gb"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": 3.13,
+      "installTools": "uv"
+    }
   }
 }
